@@ -1,3 +1,4 @@
+from typing import Any
 import re
 
 import yaml
@@ -59,12 +60,31 @@ def record_to_row(d: dict):
     ]
 
 
+def reference_ordering(reference_count: Any) -> int:
+    if reference_count is None:
+        return -1
+    elif isinstance(reference_count, str):
+        match reference_count:
+            case "multiple":
+                return 2
+            case "n/a":
+                return -1
+            case _:
+                # raise ValueError(f"Bad value for reference count: {reference_count}")
+                return 100
+    elif isinstance(reference_count, int):
+        return reference_count
+    else:
+        raise ValueError(f"Bad value for reference count: {reference_count}")
+
+
 with open("data.yml") as f:
     datasets = yaml.load(f, Loader=SafeLoader)
 
 datasets = datasets["datasets"].values()
-datasets = sorted(datasets, key=lambda d: (DOMAIN_ORDER.index(d["domain"]), d["year"]))
-rows = map(record_to_row, datasets)
+# datasets = sorted(datasets, key=lambda d: (DOMAIN_ORDER.index(d["domain"]), d["year"]))
+datasets = sorted(datasets, key=lambda d: int(d["year"]), reverse=True)
+rows = sorted(map(record_to_row, datasets), key=lambda s: reference_ordering(s[-2]), reverse=True)
 
 table = tabulate(rows, headers=HEADER, tablefmt="github")
 table = re.sub(" +", " ", table)  # more compact
