@@ -29,10 +29,10 @@ HEADER = [
 
 # More compact
 LEVEL_MAP = {
-    'Sentence': 'Sent',
-    'Paragraph': 'Par',
-    'Document': 'Doc',
-    'Lexical': 'Lex',
+    "Sentence": "Sent",
+    "Paragraph": "Par",
+    "Document": "Doc",
+    "Lexical": "Lex",
 }
 
 
