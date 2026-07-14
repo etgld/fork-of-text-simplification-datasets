@@ -14,13 +14,13 @@ Notes on the table columns:
 
 | Dataset | Lang | Domain | Kind | Level | Instances | Refs. | Link |
 |-|-|-|-|-|-|-|-|
-| **CEFR** [(Uchida et al., 2018)](https://aclanthology.org/L18-1514/) | EN | Education | Comparable | Lex | 414 | 2.4(avg) | [Link](http://www-bigdata.ist.osaka-u.ac.jp/arase/pj/lex-simplification.zip) |
 | **ASSET** [(Alva-Manchego et al., 2020)](https://doi.org/10.18653/v1/2020.acl-main.424) | EN | Wikipedia | Parallel | Sent | 2359 sentences (2000 train, 359 test) | 10 | [Link](https://github.com/facebookresearch/asset) |
 | **TurkCorpus** [(Xu et al., 2016)](https://doi.org/10.1162/tacl_a_00107) | EN | Wikipedia | Parallel | Sent | 2359 sentences (2000 dev, 359 test) | 8 | [Link](https://github.com/cocoxu/simplification/) |
 | **SIMPLEX-PB-3.0** [(Hartmann and Aluisio, 2021)](https://linguamatica.com/index.php/linguamatica/article/view/323) | PT (BR) | Education | Parallel | Lex | 1582 | 7,3(avg) | [Link](https://github.com/nathanshartmann/SIMPLEX-PB-3.0) |
 | **Hsplit** [(Sulem et al., 2018)](https://doi.org/10.18653/v1/D18-1081) | EN | Wikipedia | Parallel | Sent | 359 sentences (test set of turk corpus) | 4 | [Link](https://github.com/eliorsulem/HSplit-corpus) |
 | **SimPA** [(Scarton et al., 2018)](https://aclanthology.org/L18-1685/) | EN | Web | Parallel | Sent | 1100 sentences with 3 lexical, and one 1 syntactic simplification each | 3, 1 | [Link](https://github.com/SIMPATICOProject/simpa) |
 | **EASIER** [(Alarcon et al., 2021)](https://ieeexplore.ieee.org/document/9400837) | ES | Mixed | Parallel | Lex | 5153 | 1-3 | [Link](https://github.com/LURMORENO/EASIER_CORPUS) |
+| **CEFR** [(Uchida et al., 2018)](https://aclanthology.org/L18-1514/) | EN | Education | Comparable | Lex | 414 | 2.4(avg) | [Link](http://www-bigdata.ist.osaka-u.ac.jp/arase/pj/lex-simplification.zip) |
 | **NNSEval** [(Paetzold and Specia, 2016)](https://ojs.aaai.org/index.php/AAAI/article/view/9885) | EN | Wikipedia | Comparable | Lex | 239 | multiple | [Link](https://zenodo.org/record/2552381#.Y2ququzP0-R) |
 | **BenchLS** [(Paetzold and Specia, 2016)](https://aclanthology.org/L16-1491/) | EN | Wikipedia | Comparable | Lex | 929 | multiple | [Link](http://ghpaetzold.github.io/data/BenchLS.zip) |
 | **LexMTurk** [(Horn et al., 2014)](https://aclanthology.org/P14-2075/) | EN | Wikipedia | Parallel | Lex | 500 | multiple | [Link](https://cs.pomona.edu/~dkauchak/simplification/) |
